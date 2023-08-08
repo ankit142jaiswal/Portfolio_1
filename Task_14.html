@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 14</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-info">
+    <body style="background-color: lightgrey;">
+    
+    
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent px-5">
+        <div class="container-fluid"  style="font-weight: bold;font-size: x-large;">
+          <div>
+          <a class="navbar-brand " href="#" style="font-weight: bold;font-size: xx-large;">Ankit Chand Jaiswal</a>
+  
+          </div>
+          <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+              <li class="nav-item ">
+                <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link active px-4" href="#contact">Contact</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-4"
+                  href="#Traning"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Traning
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                <li><a class="dropdown-item" href="week1.html"><img src="img/limg1.png" height="40px" alt="">Week 1</a></li>
+                <li><a class="dropdown-item" href="week2.html"><img src="img/limg2.png" height="40px" alt="">Week 2</a></li>
+                <li><a class="dropdown-item" href="week3.html"><img src="img/limg3.png" height="40px" alt="">Week 3</a></li>
+                <li><a class="dropdown-item" href="week4.html"><img src="img/limg4.png" height="40px" alt="">Week 4</a></li>
+              </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+  
+        </div>
+      </nav>
+ 
+      
+    <div class="container1 bg-info p-5 " > 
+      <h1>Task 14<hr></h1>
+    <div class="container1 bg-info text-center bg-info p-3 mb-5" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);">
+        <div class="row p-5 mb-5">
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="img/t14.jpeg" height="280px" class="card-img-top" alt="..."><hr>
+              <div class="card-body">
+                <h1>List of Person</h1>
+            </div>            
+            </div>
+          </div>
+          <div class="col-md-8 pt-5">
+            <h1>List of Person</h1><hr>
+            <p>Lists are used to store multiple items in a single variable. Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage. Lists are created using square brackets.
+            </p>            
+            
+          </div>
+          
+        </div>
+        
+  
+  
+    </div>
+      <div class="container4 bg-info text-center bg-info p-3 mb-5" style="box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);">
+        
+    <div class="container">
+      <table class="table" id="table2">
+        <h1 class="text-center text-dark">List of Person</h1>
+        <hr />
+        <tr>
+          <th>Sr.No.</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        
+      </table>
+        <hr>
+        <div class="text-center m-5">
+          
+          <button type="submit" onclick="onclick1()" class="btn btn-outline-success">All </button>
+          
+          <button type="submit" onclick="onclick2()" class="btn btn-outline-success">18-30</button>
+          <button type="submit" onclick="onclick3()" class="btn btn-outline-success">30-50</button>
+          <button type="submit" onclick="onclick4()" class="btn btn-outline-success">50-80</button>
+          <button type="reset" onclick="onclick5()" class="btn btn-outline-success">Reset</button>
+          
+          
+        </div>
+
+    </div>
+
+    <script>
+        let p1 = {
+          Anmol:20,Ankit:21,Akash:22,Aman:21,
+          Gaurav:20,Avanish:22,Dishant:22,Addrash:23,
+          Deepak:21,Arvind:21,Saurabh:22,Piyush:21,
+          Sameer:37,Raju:45,Manish:35,Naruto:20,
+          Sohan:77,Ram:67,Manash:80,Ayush:19,
+
+
+        }
+        
+       
+
+        function onclick1(){
+          let val = 1;
+          for (let i =0 ;i<Object.keys(p1).length;i++){
+
+          var table = document.getElementById("table2");
+            
+            var row = table.insertRow(val);
+            var cell2 = row.insertCell(0);
+            var cell3 = row.insertCell(1);
+            var cell4 = row.insertCell(2);
+            
+            cell2.innerHTML = val+"";
+            cell3.innerHTML = Object.keys(p1)[i];
+            cell4.innerHTML = Object.values(p1)[i];
+            val++;
+            
+            
+          }
+
+        }
+        function onclick2(){
+          let val = 1;
+          onclick5();
+for (let i =0 ;i<Object.keys(p1).length;i++){
+  if( Object.values(p1)[i] >=18 && Object.values(p1)[i]<=30){
+    var table = document.getElementById("table2");
+
+    var row = table.insertRow(val);
+    var cell2 = row.insertCell(0);
+    var cell3 = row.insertCell(1);
+    var cell4 = row.insertCell(2);
+    
+    cell2.innerHTML = val+"";
+    cell3.innerHTML = Object.keys(p1)[i];
+    cell4.innerHTML = Object.values(p1)[i];
+    val++;
+    
+  }
+  
+}
+
+} function onclick3(){
+  let val = 1;
+  onclick5();
+  for (let i =0 ;i<Object.keys(p1).length;i++){
+  if( Object.values(p1)[i] >=30 && Object.values(p1)[i]<=50){
+
+  var table = document.getElementById("table2");
+  var row = table.insertRow(val);
+  var cell2 = row.insertCell(0);
+  var cell3 = row.insertCell(1);
+  var cell4 = row.insertCell(2);
+  
+  cell2.innerHTML = val+"";
+  cell3.innerHTML = Object.keys(p1)[i];
+  cell4.innerHTML = Object.values(p1)[i];
+  val++;
+  
+  }
+}
+
+}
+function onclick4(){
+  let val = 1;
+  onclick5();
+for (let i =0 ;i<Object.keys(p1).length;i++){
+  if( Object.values(p1)[i] >=50 && Object.values(p1)[i]<=80){
+
+  var table = document.getElementById("table2");
+
+
+  var row = table.insertRow(val);
+  var cell2 = row.insertCell(0);
+  var cell3 = row.insertCell(1);
+  var cell4 = row.insertCell(2);
+  
+  cell2.innerHTML = val+"";
+  cell3.innerHTML = Object.keys(p1)[i];
+  cell4.innerHTML = Object.values(p1)[i];
+  val++;
+  
+  }
+}
+
+}
+function onclick5(){
+  var table = document.getElementById("table2");
+  table.innerHTML = '<tr><th>Sr.No.</th><th>Name</th><th>Age</th></tr>';
+
+}
+    </script>
+
+
+      </div>
+      
+    </div>
+    
+    <footer class="bd-footer py-5 bg-info">
+      <hr>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 text-dark" id="contact">
+            <h1 >Contact Me</h1><hr>
+            <ul class="list-unstyled mt-5 " style="font-size: large; font-weight: bold;">
+              <li class="mb-4"><a href=""><img src="img/email.png" height="25px" alt=""> ankit2020cs142@gamil.com</a></li>
+              <li class="mb-2 " ><a href="" ><img src="img/phone1.png" height="25px" alt="">: + 91 9369643611</a></li>
+              <div class="row mt-5">
+                <div class="col-md-2"><a href="https://facebook.com" ><img src="img/facebook1.png" height="40px" alt=""></div></a>
+                <div class="col-md-2"><a href="https://twitter.com" ><img src="img/twitter1.png" height="40px" alt=""></div></a>
+                <div class="col-md-2"><a href="https://www.instagram.com" ><img src="img/instagram1.png" height="40px" alt=""></div></a>
+                <div class="col-md-2"><a href="https://www.linkedin.com/in/ankit-jaiswal-7127b3256/" ><img src="img/linkedin (2).png" height="40px" alt=""></div></a>
+
+
+                
+              </div>
+            </ul>
+            
+          </div>
+          <div class="col-md-6 text-light ">
+
+            <div class="text-center" id="contact"> 
+              <form onsubmit="sendEmail();reset();return false;">
+                <input class="form-control mb-3"required style="height: 60px;border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;" type="text" placeholder="Name" id="name" >
+                <input class="form-control mb-3"required style="height: 60px;border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;" type="email" placeholder="Email  -  example123@gamil.com" id="email" >
+                <textarea class="form-control" id="message" rows="5" placeholder="How can I help you ?" style="border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;"></textarea>
+                <button onclick="sendEmail()" class="btn btn-outline-dark mt-3" style=" color: white;font-weight: bold;border-radius: 8px ;font-size: large;box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;">Send</button>
+              </form>
+
+
+            </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

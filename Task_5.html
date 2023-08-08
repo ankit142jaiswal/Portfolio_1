@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  >
+</script>
+    <link rel="stylesheet" href="Task_5.css" />
+    <script>
+      function cl(exp){
+        if (exp == '='){
+          let expresion = document.getElementById("i1").value;
+          document.getElementById("i1").value =eval(expresion);
+        }
+        else if(exp == 'AC'){
+          document.getElementById("i1").value="";
+        }
+        else if(exp=='C'){
+          let expresion = document.getElementById("i1").value;
+          expresion = expresion.slice(0,expresion.length-1)
+          document.getElementById("i1").value=expresion;
+        }
+        else if ( exp=='()' ){
+          let expresion = document.getElementById("i1").value;
+          if(expresion!=""){
+            document.getElementById("i1").value ="("+expresion+")";
+          }
+       
+        }
+        // else if (){
+          
+        // }
+
+        else{
+          let expresion = document.getElementById("i1").value;
+        document.getElementById("i1").value =expresion+exp;
+        }
+    }
+    </script>
+  </head>
+  <body class="bg-info">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent px-5">
+      <div class="container-fluid"  style="font-weight: bold;font-size: x-large;">
+        <div>
+        <a class="navbar-brand " href="#" style="font-weight: bold;font-size: xx-large;">Ankit Chand Jaiswal</a>
+
+        </div>
+        <div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link active px-4" href="#contact">Contact</a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle px-4"
+                href="#Traning"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Traning
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+              <li><a class="dropdown-item" href="week1.html"><img src="img/limg1.png" height="40px" alt="">Week 1</a></li>
+              <li><a class="dropdown-item" href="week2.html"><img src="img/limg2.png" height="40px" alt="">Week 2</a></li>
+              <li><a class="dropdown-item" href="week3.html"><img src="img/limg3.png" height="40px" alt="">Week 3</a></li>
+              <li><a class="dropdown-item" href="week4.html"><img src="img/limg4.png" height="40px" alt="">Week 4</a></li>
+            </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+
+      </div>
+    </nav>
+    <div class="container p-5 text-center" >
+      <h1>Task 5 <hr></h1>
+      <div class="container bg-info my-5 text-center" style="padding: 50px;box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); "
+      >
+        <div class="row p-2 mb-5">
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="img/t5.jpeg"  height="280px" class="card-img-top" alt="..."><hr>
+              <div class="card-body">
+                <h2 class="card-title">Calculator</h2>
+                
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="col-md-8 pt-5">
+            <h1>Calculator</h1><hr>
+            <p>An electronic calculator is typically a portable electronic device used to perform calculations, ranging from basic arithmetic to complex mathematics.
+
+              The first solid-state electronic calculator was created in the early 1960s. Pocket-sized devices became available in the 1970s, especially after the Intel 4004, the first microprocessor, was developed by Intel for the Japanese calculator company Busicom.</p>
+
+
+          </div>
+
+        </div>
+
+      </div>
+     <div class="container p-5"style="box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);">
+
+      <div class="container1">
+        <input class="input1" type="text" id="i1" /><br />
+
+      <button class="buttonAC" onclick="cl('AC')" type="submit" id="AC">
+        AC
+      </button>
+      <button class="buttonC" onclick="cl('C')" type="submit" id="C">C</button>
+      <button class="button()" onclick="cl('()')" type="submit" id="()">
+        ()
+      </button>
+      <button class="button/" onclick="cl('/')" type="submit" id="/">/</button>
+      <br />
+      <button class="button7" onclick="cl(7)" type="submit" id="7">7</button>
+      <button class="button8" onclick="cl(8)" type="submit" id="8">8</button>
+      <button class="button9" onclick="cl(9)" type="submit" id="9">9</button>
+      <button class="button*" onclick="cl('*')" type="submit" id="*">*</button>
+      <br />
+      
+      <button class="button4" onclick="cl(4)" type="submit" id="4">4</button>
+      <button class="button5" onclick="cl(5)" type="submit" id="5">5</button>
+      <button class="button6" onclick="cl(6)" type="submit" id="6">6</button>
+      <button class="button-" onclick="cl('-')" type="submit" id="-">-</button>
+      <br />
+      
+      <button class="button1" onclick="cl(1)" type="submit" id="1">1</button>
+      <button class="button2" onclick="cl(2)" type="submit" id="2">2</button>
+      <button class="button3" onclick="cl(3)" type="submit" id="3">3</button>
+      <button class="button+" onclick="cl('+')" type="submit" id="+">+</button>
+      <br />
+      
+      <button class="button%" onclick="cl('%')" type="submit" id="%">%</button>
+      <button class="button0" onclick="cl(0)" type="submit" id="0">0</button>
+      <button class="button." onclick="cl('.')" type="submit" id=".">.</button>
+      <button class="button=" onclick="cl('=')" type="submit" id="=">=</button
+        ><br />
+      </div>
+      
+      
+    </div>
+  </div>
+
+    
+  <footer class="bd-footer py-5 bg-info">
+    <hr>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 text-dark" id="contact">
+          <h1 >Contact Me</h1><hr>
+          <ul class="list-unstyled mt-5 " style="font-size: large; font-weight: bold;">
+            <li class="mb-4"><a href=""><img src="img/email.png" height="25px" alt=""> ankit2020cs142@gamil.com</a></li>
+            <li class="mb-2 " ><a href="" ><img src="img/phone1.png" height="25px" alt="">: + 91 9369643611</a></li>
+            <div class="row mt-5">
+              <div class="col-md-2"><a href="https://facebook.com" ><img src="img/facebook1.png" height="40px" alt=""></div></a>
+              <div class="col-md-2"><a href="https://twitter.com" ><img src="img/twitter1.png" height="40px" alt=""></div></a>
+              <div class="col-md-2"><a href="https://www.instagram.com" ><img src="img/instagram1.png" height="40px" alt=""></div></a>
+              <div class="col-md-2"><a href="https://www.linkedin.com/in/ankit-jaiswal-7127b3256/" ><img src="img/linkedin (2).png" height="40px" alt=""></div></a>
+
+
+              
+            </div>
+          </ul>
+          
+        </div>
+        <div class="col-md-6 text-light ">
+
+          <div class="text-center" id="contact"> 
+            <form onsubmit="sendEmail();reset();return false;">
+              <input class="form-control mb-3"required style="height: 60px;border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;" type="text" placeholder="Name" id="name" >
+              <input class="form-control mb-3"required style="height: 60px;border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;" type="email" placeholder="Email  -  example123@gamil.com" id="email" >
+              <textarea class="form-control" id="message" rows="5" placeholder="How can I help you ?" style="border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;"></textarea>
+              <button onclick="sendEmail()" class="btn btn-outline-dark mt-3" style=" color: white;font-weight: bold;border-radius: 8px ;font-size: large;box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;">Send</button>
+            </form>
+
+
+          </div>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

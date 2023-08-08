@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-info">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent px-5">
+      <div class="container-fluid"  style="font-weight: bold;font-size: x-large;">
+        <div>
+        <a class="navbar-brand " href="#" style="font-weight: bold;font-size: xx-large;">Ankit Chand Jaiswal</a>
+
+        </div>
+        <div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link active px-4" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link actice px-4" href="#about">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle px-4"
+                href="#Traning"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Traning
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="week1.html"><img src="img/limg1.png" height="40px" alt="">
+                    HTML</a></li>
+                <li><a class="dropdown-item" href="week2.html"><img src="img/limg2.png" height="40px" alt="">CSS</a></li>
+                <li><a class="dropdown-item" href="week3.html"><img src="img/limg3.png" height="40px" alt="">JavaScript</a></li>
+                <li><a class="dropdown-item" href="week4.html"><img src="img/limg4.png" height="40px" alt="">REACT</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+
+      </div>
+    </nav>
+   <div class="container p-5  ">
+      <h1>Task 6<hr></h1>
+      <div class="container1 bg-info my-5 text-center" style="padding: 50px;box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); "
+      >
+        <div class="row p-2 mb-5">
+          <div class="col-md-6">
+            <div class="card" style="width: 25rem;">
+              <img src="img/t6.jpeg" class="card-img-top" alt="..."><hr>
+              <div class="card-body">
+                <h2 class="card-title">Form</h2>
+                
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="col-md-6 pt-5">
+            <h1>Form</h1><hr>
+            <p >Registration is a method of officially recording something. Usually something is registered to claim more rights, or to protect ownership, or because the law says it must be registered to be used legally.
+
+              A register was a large book. It was used like a diary to record business dealings or other events.
+            </p>
+
+
+          </div>
+
+        </div>
+
+      </div>
+     <div class="container p-5 " style="box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);">
+      <div class="">
+        <h1>Bootcpam Registration Form</h1>
+        <p>
+          Complete this form to express your intrest in the upcoming web
+          development bootstrap
+        </p>
+      </div>
+      <form onsubmit="reset1();">
+        <h2>Login Details</h2>
+
+        <label for="form-label">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          id="email1"
+          placeholder="mail@gmail.com"
+          required
+          >
+        <label for="form-label">Password</label>
+        <input
+          type="password"          
+          class="form-control"
+          id="Password1"
+          placeholder="example-abc@123"
+          required
+        >
+        <label for="form-label">Re-enter Password</label>
+        <input
+          type="password"          
+          class="form-control"
+          id="Password2"
+          placeholder="example-abc@123"
+          onchange="miss()";
+          required
+        >
+        <label id="id3" ></label>
+        <h2>Personal Information</h2>
+        <label for="form-label">Name</label>
+        <input
+          type="text"          
+          class="form-control"
+          id="name1"
+          placeholder="Enter Your Name"
+          required
+        >
+        <label for="form-label">Roll Number</label>
+        <input
+          type="text"
+          
+          class="form-control"
+          id="rollno1"
+          placeholder="University Roll No."
+          required
+        >
+        <label for="form-label">Branch</label>
+        <input
+        type="text"
+          class="form-control"
+          id="branch1"          
+          placeholder="example- Computer Science"
+          required
+        >
+        <label for="form-label">Pnone No.</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="phone1"
+          placeholder="Pnone Number"
+          pattern="[0-9]{10}"
+          required         
+        >
+        <label for="form-check">Section</label><br/>
+        <div class="form-check-inline">
+            <input
+            type="radio"
+            class="form-check-input"
+            name="optradio"
+            id="radio1"
+            value="CSA"
+            >
+            CSA
+            
+            <input
+            type="radio"
+            class="form-check-input"
+            name="optradio"
+            id="radio2"
+            value="CSB"
+            
+            >
+            CSB
+            
+            <input
+            type="radio"
+            class="form-check-input"
+            name="optradio"
+            class="form-check-input"
+            id="radio3"
+            value="CSC"
+            disabled
+            >
+            CSC
+          </div><br>
+        <label for="form-check">Gender</label><br>
+        <div class="form-check-inline">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="gradio"
+              value="Male"
+              id="radio4"
+            >
+            Male
+  
+            <input
+              type="radio"
+              class="form-check-input"
+              name="gradio"
+              value="Female"
+              id="radio5"
+            >
+            Female
+  
+            <input
+              type="radio"
+              class="form-check-input"
+              name="gradio"
+              id="radio6"
+              value="Trans"
+            >
+            Trans
+          </div>
+
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="option"
+            value="Yes"
+            id="check1"
+            required
+          >
+          I have read and agree to the term and conditions
+        </div>
+        <button type="submit"  class="btn btn-outline-success float-end m-2" onclick="submit1()">
+          Submit
+        </button>
+        <button type="reset" onclick="reset1()" class="btn btn-outline-danger float-end m-2">
+          Reset
+        </button>
+      </form>
+     
+    </div>
+  </div>
+    <script>
+      function submit1() {
+        let e = document.getElementById('email1').value;
+        let p1 = document.getElementById('Password1').value;
+        let p2 = document.getElementById('Password2').value;
+        let n = document.getElementById('name1').value;
+        let r = document.getElementById('rollno1').value;
+        let b = document.getElementById('branch1').value;
+        let p = document.getElementById('phone1').value;
+        console.log(e)
+        console.log(p1)
+        console.log(p2)
+        console.log(n)
+        console.log(r)
+        console.log(b)
+        console.log(p)
+        let rad = document.getElementsByName("optradio")
+        let rad2 = document.getElementsByName("gradio")
+        let check1 = document.getElementsByName("option")
+
+        for ( let val of rad){
+            if (val.checked) {
+                console.log(val.value);
+            }
+        }
+        for ( let val of rad2){
+            if (val.checked) {
+                console.log(val.value);
+            }
+        } 
+        for ( let val of check1){
+            if (val.checked) {
+                console.log(val.value);
+            }
+        } 
+
+       
+        
+    }
+    function miss(){
+        let p1 = document.getElementById('Password1');
+        let p2 = document.getElementById('Password2');
+
+        if (p2.value!=p1.value){
+            document.getElementById('id3').innerHTML="Pelase ! Enter same Password";
+            document.getElementById('id3').style="color : red;"
+        }
+        if (p1.value==p2.value){
+            document.getElementById('id3').innerHTML="Valid Password";
+            document.getElementById('id3').style="color :green;"
+
+
+        }
+
+    }
+    function reset1(){
+        document.getElementById('email1').value="";
+        document.getElementById('Password1').value="";
+
+        document.getElementById('Password2').value="";
+
+        document.getElementById('name1').value="";
+
+        document.getElementById('rollno1').value="";
+
+        document.getElementById('branch1').value="";
+
+        document.getElementById('phone1').value="";
+
+        let rad = document.getElementsByName("optradio");
+        let rad2 = document.getElementsByName("gradio");
+        let check1 = document.getElementsByName("option");
+
+        for ( let val of rad){
+            if (val.checked) {
+                val.checked=false;
+
+            }
+        }
+        for ( let val of rad2){
+            if (val.checked) {
+                val.checked=false;
+
+            }
+        } 
+        for ( let val of check1){
+            if (val.checked) {
+                val.checked=false;
+
+
+            }
+        } 
+
+
+        
+
+
+    }
+    </script>
+
+    
+<footer class="bd-footer py-5 bg-info">
+  <hr>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 text-dark " id="contact">
+        <h1 >Contact Me</h1><hr>
+        <ul class="list-unstyled mt-5 " style="font-size: large; font-weight: bold;">
+          <li class="mb-4"><a href=""><img src="img/email.png" height="25px" alt=""> ankit2020cs142@gamil.com</a></li>
+          <li class="mb-2 " ><a href="" ><img src="img/phone1.png" height="25px" alt="">: + 91 9369643611</a></li>
+          <div class="row mt-5">
+            <div class="col-md-2"><a href="" ><img src="img/facebook1.png" height="40px" alt=""></div></a>
+            <div class="col-md-2"><a href="" ><img src="img/twitter1.png" height="40px" alt=""></div></a>
+            <div class="col-md-2"><a href="" ><img src="img/instagram1.png" height="40px" alt=""></div></a>
+            <div class="col-md-2"><a href="" ><img src="img/linkedin (2).png" height="40px" alt=""></div></a>
+
+
+            
+          </div>
+        </ul>
+        
+      </div>
+      <div class="col-md-6 text-light ">
+
+        <div class="text-center" id="contact"> 
+          <input class="form-control mb-3" style="height: px;border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;" type="text" placeholder="Name" id="name" >
+          <input class="form-control mb-3"style="height: px;border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;" type="email" placeholder="Email  -  example123@gamil.com" id="email" >
+          <textarea id="message" rows="5" placeholder="How can I help you ?" style="width: 635px;border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;"></textarea>
+
+          <!-- <input class="form-control mb-3 " style="height: 150px;border-radius: 8px ;font-weight: bold;font-size: large; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;" type="text" placeholder="Your Message" id="message" > -->
+          <button class="btn btn-outline-dark mt-3" style="color: white;font-weight: bold;border-radius: 8px ;font-size: large;box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);border: none;">Send</button>
+          
+          
+        </div>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
